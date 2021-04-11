@@ -18,6 +18,10 @@ android {
             cmake {
                 cppFlags ""
             }
+            cmake {
+                arguments '-DANDROID_PLATFORM=android-14','-DANDROID_TOOLCHIAN=clang'
+                targets 'add'
+            }
         }
     }
 
